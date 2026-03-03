@@ -175,6 +175,24 @@ variable "backend_desired_count" {
   default     = 2
 }
 
+variable "backend_min_count" {
+  description = "Minimum number of backend tasks for autoscaling"
+  type        = number
+  default     = 2
+}
+
+variable "backend_max_count" {
+  description = "Maximum number of backend tasks for autoscaling"
+  type        = number
+  default     = 10
+}
+
+variable "backend_cpu_target" {
+  description = "Target CPU utilization (%) for autoscaling"
+  type        = number
+  default     = 70
+}
+
 variable "backend_task_cpu" {
   description = "Fargate task CPU units for backend"
   type        = number
