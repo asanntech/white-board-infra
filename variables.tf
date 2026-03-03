@@ -196,13 +196,13 @@ variable "backend_cpu_target" {
 variable "backend_task_cpu" {
   description = "Fargate task CPU units for backend"
   type        = number
-  default     = 256
+  default     = 512
 }
 
 variable "backend_task_memory" {
   description = "Fargate task memory (MiB) for backend"
   type        = number
-  default     = 512
+  default     = 2048
 }
 
 variable "backend_health_check_path" {
