@@ -271,7 +271,7 @@ variable "redis_engine_version" {
 variable "redis_replicas_per_node_group" {
   description = "Number of replicas per node group (0 for single node)"
   type        = number
-  default     = 0
+  default     = 1
 }
 
 variable "redis_auth_secret_arn" {
